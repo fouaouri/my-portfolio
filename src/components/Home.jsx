@@ -10,7 +10,7 @@ const Home = () => {
         <Container fluid className="home-section" id="home">
             <Particle />
             <Container className="home-content">
-                <Row>
+                <Row style={{ paddingTop: "10%", paddingBottom: "10%" }}>
                     <Col md={7} className="home-header">
                         <h1 style={{ paddingBottom: 15 }} className="heading">
                         Hi There!{" "}
@@ -21,7 +21,7 @@ const Home = () => {
 
                         <h1 className="heading-name">
                             I'M
-                            <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                            <strong className="main-name"> Fatima Ezzahra Ouaourikt</strong>
                         </h1>
 
                         <div style={{ padding: 50, textAlign: "left" }}>
@@ -33,7 +33,7 @@ const Home = () => {
                         src={dwoman}
                         alt="home pic"
                         className="img-fluid"
-                        style={{ maxHeight: "500px" }}
+                        style={{ marginLeft: "10%", height: "110%", marginTop: "10%",maxHeight: "500px",Height: "800px", backgroundSize: "cover", animation: "profile_animate 5s ease-in-out infinite 1s", boxShadow: "20px 20px 20px rgba(0, 0, 0, 0.9)"}}
                     />
                     </Col>
                 </Row>

@@ -6,7 +6,7 @@ import facebook from "./facebook.png";
 import instagram from "./instagram.png";
 import linkedin from "./linkedin.png";
 import twitter from "./twitter.png";
-import dwoman from "./3d-woman.png"
+import dwoman from "./titim.png"
 
 export {
   logo, //

@@ -1,5 +1,3 @@
-// import React from 'react'
-import styles from './style';
 import React, { useState, useEffect } from "react";
 import {Navbar, Footer, Preloader, ScrollToTop, Home, Projects, About } from './components';
 import {

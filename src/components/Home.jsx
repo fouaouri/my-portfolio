@@ -1,4 +1,4 @@
-import styles from '../style'
+
 import {dwoman} from '../assets'
 import Type from './Type.jsx'
 import { Container, Row, Col } from "react-bootstrap";
@@ -12,19 +12,19 @@ const Home = () => {
             <Container className="home-content">
                 <Row style={{ paddingTop: "10%", paddingBottom: "10%" }}>
                     <Col md={7} className="home-header">
-                        <h1 style={{ paddingBottom: 15 }} className="heading">
-                        Hi There!{" "}
+                    <h1 style={{ paddingBottom: 15 }} className="heading">
+                        Hello and Welcome!{" "}
                         <span className="wave" role="img" aria-labelledby="wave">
-                        👋🏻
+                            👋🏻
                         </span>
-                        </h1>
+                    </h1>
 
-                        <h1 className="heading-name">
-                            I'M
-                            <strong className="main-name"> Fatima Ezzahra Ouaourikt</strong>
-                        </h1>
+                    <h1 className="heading-name">
+                        I'm <strong className="main-name">Fatima Ezzahra Ouaourikt</strong> <br/>a passionate Front-End developer.
+                        
+                    </h1>
 
-                        <div style={{ padding: 50, textAlign: "left" }}>
+                        <div style={{ padding: 50, textAlign: "left", fontSize: "80%" }}>
                             <Type />
                         </div>
                     </Col>

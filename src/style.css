@@ -389,9 +389,10 @@ html {
   }
   
   .home-social-icons {
-    font-size: 1.5rem; /* Adjust the icon size */
-    color: #000; /* Default icon color */
+    font-size: 1.5rem;
+    color: #000;
     text-decoration: none;
+    position: relative;
   }
   
   .home-social-icons::before {
@@ -414,7 +415,6 @@ html {
   
   .home-social-icons:hover {
     color: #fbff00;
-    background: #09000c;
     box-shadow: 0 0 30px #fbff00;
   }
 

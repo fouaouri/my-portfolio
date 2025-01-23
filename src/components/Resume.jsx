@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import pdf from '../assets/Ouaourikt_fCV.pdf'
+import pdf from '../assets/EzzahraCV.pdf'
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import Particle from "./particle";

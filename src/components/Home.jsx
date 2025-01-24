@@ -33,7 +33,7 @@ const Home = () => {
                         src={dwoman}
                         alt="home pic"
                         className="img-fluid"
-                        style={{ marginLeft: "10%", height: "110%", marginTop: "10%",maxHeight: "500px",Height: "800px", backgroundSize: "cover", animation: "profile_animate 5s ease-in-out infinite 1s", boxShadow: "20px 20px 20px rgba(0, 0, 0, 0.9)"}}
+                        style={{height: "110%", marginTop: "10%",maxHeight: "500px",Height: "800px", backgroundSize: "cover", animation: "profile_animate 5s ease-in-out infinite 1s", boxShadow: "20px 20px 20px rgba(0, 0, 0, 0.9)"}}
                     />
                     </Col>
                 </Row>

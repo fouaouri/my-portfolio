@@ -46,7 +46,7 @@ const projectDetails = [
     img: webServe,
     description: "This project is designed to help you gain a deeper understanding of how the HTTP protocol functions by having you build your own HTTP server. By developing this server, you will learn the fundamental principles behind request-response communication, which is the backbone of web browsing. As part of the project, you will test your server with a real browser, allowing you to observe how it handles different HTTP methods such as GET, POST, PUT, and DELETE. This hands-on experience will give you insights into topics like request parsing, header management, response codes, and data transmission. Even if you don’t plan on working directly on web development, understanding the inner workings of HTTP will be an invaluable skill. The knowledge gained from creating your own server will also improve your ability to troubleshoot network issues, optimize server performance, and understand security vulnerabilities, making this project an essential learning experience for anyone interested in systems programming, networking, or backend development. Furthermore, it will provide you with a solid foundation in how web servers operate, which is crucial for anyone working with modern web technologies.",
     github: 'https://github.com/fouaouri/Dragon-Ping/tree/main',
-    assets: [] // Added image for the modal
+    assets: []
   },
   {
     id: 5,
@@ -61,7 +61,6 @@ const projectDetails = [
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const navigate = useNavigate();  // Initialize navigate using useNavigate hook
 
   const handleShow = (project) => {
     console.log(project);
@@ -141,6 +140,7 @@ const Projects = () => {
           onHide={handleClose}
           centered
           className="full-modal"
+          
         >
         {selectedProject && (
           <>
@@ -164,8 +164,8 @@ const Projects = () => {
 
               {/* Loop through the assets and display additional images */}
               {selectedProject.assets.length > 0 && (
-                <div style={{ marginTop: "20px", color:"#9d9e66" }}>
-                  <h5>Project Preview : </h5>
+                <div style={{ marginTop: "20px"}}>
+                  <h5 style={{marginBottom: "20px",color:"rgb(100, 95, 0)", fontSize: "150%" }}>Project Preview : </h5>
                   <div className="image-gallery" style={{ display: "flex", justifyContent: "center",flexWrap: "wrap", gap: "10px"}}>
                   {selectedProject.assets.map((asset, index) => {
                       console.log("Assets: ", selectedProject.assets);
@@ -194,11 +194,10 @@ const Projects = () => {
                 </div>
               )}
             </Modal.Body>
-            <Modal.Footer className="modal-footer" style={{backgroundColor:"white"}}>
+            <Modal.Footer className="modal-footer" style={{backgroundColor:"rgba(207, 202, 113, 0.777)"}}>
               <Button
                 variant="secondary"
                 onClick={() => {
-                  // Navigate to the GitHub link
                   window.open(selectedProject.github, '_blank');
                 }}
               >

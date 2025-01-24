@@ -1,13 +1,14 @@
 .full-modal .modal-dialog {
     max-width: 1000px;
     margin: auto;
+
 }
 
 .modal-header, .modal-body, .modal-footer {
     width: 100%;
     max-width: 100%;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(207, 202, 113, 0.777);
 }
 
 .modal-body {

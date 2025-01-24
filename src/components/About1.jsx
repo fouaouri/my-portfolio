@@ -41,7 +41,7 @@ const About1 = () => {
                 enjoying
                 <br /> a variety of activities that keep me inspired and
                 energized. I love:
-                <ul style={{ paddingTop: "10%" , paddingLeft: "20%"}}>
+                <ul style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingTop: "10%" }}>
                   <li className="about-activity">
                     ➡️ Playing volleyball, a sport that challenges both my
                     teamwork and agility.

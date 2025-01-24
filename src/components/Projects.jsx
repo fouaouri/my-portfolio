@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "../ModalStyles.css";
 import { Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import Particle from "./particle.jsx";
 import Cub3d from "../assets/3d.png";
 import Inception from "../assets/docker.png";
@@ -8,11 +9,6 @@ import webServe from "../assets/webserver.png";
 import Transendance from "../assets/ping-png.png";
 import CardGame from "../assets/cardicon.png";
 import Dragon from "../assets/DragonScreen.mp4";
-// import Dragon2 from "../assets/dragon-2.png";
-// import Dragon3 from "../assets/dragon-3.png";
-// import Dragon4 from "../assets/dragon-4.png";
-// import Dragon5 from "../assets/dragon-5.png";
-// import Dragon6 from "../assets/dragon-6.png";
 import Map3D from "../assets/cubScreen.mp4";
 import CardGame1 from "../assets/memory-card1.png";
 import CardGame2 from "../assets/memory-card2.png";
@@ -46,19 +42,19 @@ const projectDetails = [
   },
   {
     id: 4,
-    title: "DockMaster",
-    img: Inception,
-    description: "This project is designed to deepen your understanding of system administration by leveraging Docker. The main objective is to explore the concept of containerization and virtualization, focusing on creating and managing multiple Docker images. By working with Docker, you'll gain hands-on experience in building and deploying containerized applications within isolated environments. Additionally, the project involves setting up a personal virtual machine (VM), where you'll host the Docker images and manage their configurations. This exercise not only enhances your technical skills in container orchestration but also provides an opportunity to practice advanced system management techniques, such as resource allocation, network configuration, and data persistence within Docker containers. You'll gain insights into how Docker can be used for scalable and efficient deployment across different environments. The project is an essential step for anyone looking to specialize in DevOps, cloud computing, or modern infrastructure management, as Docker has become an industry-standard tool for creating lightweight, portable, and reproducible environments for software applications.",
-    github: 'https://github.com/fouaouri/Dragon-Ping/tree/main',
-    assets: []
-  },
-  {
-    id: 5,
     title: "ServerX",
     img: webServe,
     description: "This project is designed to help you gain a deeper understanding of how the HTTP protocol functions by having you build your own HTTP server. By developing this server, you will learn the fundamental principles behind request-response communication, which is the backbone of web browsing. As part of the project, you will test your server with a real browser, allowing you to observe how it handles different HTTP methods such as GET, POST, PUT, and DELETE. This hands-on experience will give you insights into topics like request parsing, header management, response codes, and data transmission. Even if you don’t plan on working directly on web development, understanding the inner workings of HTTP will be an invaluable skill. The knowledge gained from creating your own server will also improve your ability to troubleshoot network issues, optimize server performance, and understand security vulnerabilities, making this project an essential learning experience for anyone interested in systems programming, networking, or backend development. Furthermore, it will provide you with a solid foundation in how web servers operate, which is crucial for anyone working with modern web technologies.",
     github: 'https://github.com/fouaouri/Dragon-Ping/tree/main',
     assets: [] // Added image for the modal
+  },
+  {
+    id: 5,
+    title: "DockMaster",
+    img: Inception,
+    description: "This project is designed to deepen your understanding of system administration by leveraging Docker. The main objective is to explore the concept of containerization and virtualization, focusing on creating and managing multiple Docker images. By working with Docker, you'll gain hands-on experience in building and deploying containerized applications within isolated environments. Additionally, the project involves setting up a personal virtual machine (VM), where you'll host the Docker images and manage their configurations. This exercise not only enhances your technical skills in container orchestration but also provides an opportunity to practice advanced system management techniques, such as resource allocation, network configuration, and data persistence within Docker containers. You'll gain insights into how Docker can be used for scalable and efficient deployment across different environments. The project is an essential step for anyone looking to specialize in DevOps, cloud computing, or modern infrastructure management, as Docker has become an industry-standard tool for creating lightweight, portable, and reproducible environments for software applications.",
+    github: 'https://github.com/fouaouri/Dragon-Ping/tree/main',
+    assets: []
   }
 ];
 
@@ -121,7 +117,8 @@ const Projects = () => {
                     variant="top"
                     src={project.img}
                     style={{
-                      height: "250px",
+                      width: "100%",
+                      height: "auto",
                       objectFit: "cover",
                       borderRadius: "10px 10px 0 0",
                     }}
@@ -139,31 +136,18 @@ const Projects = () => {
       </Container>
 
       {/* Modal for project details */}
-      <Modal show={showModal} onHide={handleClose} centered style={{display : "flex", alignItems: "center", width: '1500px'}} >
+      <Modal
+          show={showModal}
+          onHide={handleClose}
+          centered
+          className="full-modal"
+        >
         {selectedProject && (
           <>
-            <Modal.Header closeButton style={{
-              maxWidth: "1400px",
-              width: '1000px',
-              height: "60px",
-              paddingRight: "10px",
-              backgroundColor: "white"
-              }}>
+            <Modal.Header closeButton className="modal-header" >
               <Modal.Title>{selectedProject.title}</Modal.Title>
             </Modal.Header>
-            <Modal.Body
-              style={{
-                display: "flex",
-              alignItems: "center",
-              flexDirection: "column",
-              maxWidth: "1400px",
-              width: '1000px',
-              height: "800px",
-              overflowY: "auto",
-              paddingRight: "10px",
-              backgroundColor: "white"
-              }}
-            >
+            <Modal.Body className="modal-body">
               <img
                 src={selectedProject.img}
                 alt={selectedProject.title}
@@ -210,13 +194,7 @@ const Projects = () => {
                 </div>
               )}
             </Modal.Body>
-            <Modal.Footer style={{
-              maxWidth: "1400px",
-              width: '1000px',
-              height: "60px",
-              paddingRight: "10px",
-              backgroundColor: "white"
-              }}>
+            <Modal.Footer className="modal-footer" style={{backgroundColor:"white"}}>
               <Button
                 variant="secondary"
                 onClick={() => {

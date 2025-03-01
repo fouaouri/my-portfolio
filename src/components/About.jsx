@@ -64,7 +64,7 @@ const About = () => {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-              Download CV
+            Download CV
           </Button>
         </Row>
       </Container>

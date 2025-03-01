@@ -108,7 +108,7 @@ const Projects = () => {
                     boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.2)",
                     cursor: "pointer",
                     margin: "10px",
-                    backgroundColor: "#f2e396",
+                    backgroundColor: "#E0E0E0",
                   }}
                   onClick={() => handleShow(project)}
                 >
@@ -144,10 +144,10 @@ const Projects = () => {
         >
         {selectedProject && (
           <>
-            <Modal.Header closeButton className="modal-header" >
+            <Modal.Header closeButton className="modal-header" style={{backgroundColor:"#E0E0E0"}} >
               <Modal.Title>{selectedProject.title}</Modal.Title>
             </Modal.Header>
-            <Modal.Body className="modal-body">
+            <Modal.Body className="modal-body" style={{backgroundColor:"#E0E0E0"}}>
               <img
                 src={selectedProject.img}
                 alt={selectedProject.title}
@@ -155,7 +155,7 @@ const Projects = () => {
                   width: "30%",
                   borderRadius: "10px",
                   marginBottom: "15px",
-                  backgroundColor: "#ebeb06b9",
+                  backgroundColor: "rgb(128,128,128)",
                 }}
               />
               <p style={{ marginTop: "5%", fontSize: "120%" }}>
@@ -165,7 +165,7 @@ const Projects = () => {
               {/* Loop through the assets and display additional images */}
               {selectedProject.assets.length > 0 && (
                 <div style={{ marginTop: "20px"}}>
-                  <h5 style={{marginBottom: "20px",color:"rgb(100, 95, 0)", fontSize: "150%" }}>Project Preview : </h5>
+                  <h5 style={{marginBottom: "20px",color:"#000000", fontSize: "150%" }}>Project Preview : </h5>
                   <div className="image-gallery" style={{ display: "flex", justifyContent: "center",flexWrap: "wrap", gap: "10px"}}>
                   {selectedProject.assets.map((asset, index) => {
                       console.log("Assets: ", selectedProject.assets);
@@ -194,7 +194,7 @@ const Projects = () => {
                 </div>
               )}
             </Modal.Body>
-            <Modal.Footer className="modal-footer" style={{backgroundColor:"rgba(207, 202, 113, 0.777)"}}>
+            <Modal.Footer className="modal-footer" style={{backgroundColor:"#E0E0E0"}}>
               <Button
                 variant="secondary"
                 onClick={() => {

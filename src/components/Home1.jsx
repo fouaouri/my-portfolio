@@ -14,7 +14,10 @@ function Home2() {
             A LITTLE ABOUT ME
           </h1>
           <p className="home-about-body">
-            Ever since I discovered programming, it has been an exciting journey of creativity and problem-solving. I am passionate about learning and continually improving my skills to stay at the forefront of the tech world. 🚀
+            Ever since I discovered programming, it has been an exciting journey
+            of creativity and problem-solving. I am passionate about learning
+            and continually improving my skills to stay at the forefront of the
+            tech world. 🚀
             <br />
             <br />I have a solid foundation in languages like
             <i>
@@ -23,17 +26,22 @@ function Home2() {
             <br />
             <br />
             <i>
-              I am always eager to learn new technologies and frameworks to enhance my capabilities. To fuel this passion, I've pursued certifications from renowned platforms like{" "}
-              <b className="yellow">freeCodeCamp</b>, where I've earned credentials that validate my knowledge and commitment to self-improvement.
+              I am always eager to learn new technologies and frameworks to
+              enhance my capabilities. To fuel this passion, I've pursued
+              certifications from renowned platforms like{" "}
+              <b className="yellow">freeCodeCamp</b>, where I've earned
+              credentials that validate my knowledge and commitment to
+              self-improvement.
             </i>
             <br />
-            <br />
-            I enjoy applying my knowledge in real-world projects using{" "}
-            <b className="yellow">HTML, CSS, and Vanilla JavaScript</b>, along with powerful modern libraries such as{" "}
+            <br />I enjoy applying my knowledge in real-world projects using{" "}
+            <b className="yellow">HTML, CSS, and Vanilla JavaScript</b>, along
+            with powerful modern libraries such as{" "}
             <i>
               <b className="yellow">React.js</b>
             </i>
-            . My goal is to develop impactful, user-friendly web applications while continuously growing as a developer.
+            . My goal is to develop impactful, user-friendly web applications
+            while continuously growing as a developer.
           </p>
         </Col>
       </Row>
@@ -41,7 +49,8 @@ function Home2() {
         <Col md={12} className="home-about-social">
           <h1>LET'S CONNECT</h1>
           <p>
-            Feel free to <span className="yellow">reach out</span> and connect with me!
+            Feel free to <span className="yellow">reach out</span> and connect
+            with me!
           </p>
           <ul className="home-about-social-links">
             <li className="social-icons">

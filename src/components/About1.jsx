@@ -17,7 +17,7 @@ const About1 = () => {
               <p
                 style={{
                   paddingTop: "2%",
-				  color: "white",
+                  color: "white",
                   paddingBottom: "5%",
                   fontSize: "1.5rem",
                   textAlign: "center",
@@ -41,7 +41,14 @@ const About1 = () => {
                 enjoying
                 <br /> a variety of activities that keep me inspired and
                 energized. I love:
-                <ul style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingTop: "10%" }}>
+                <ul
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "column",
+                    paddingTop: "10%",
+                  }}
+                >
                   <li className="about-activity">
                     ➡️ Playing volleyball, a sport that challenges both my
                     teamwork and agility.
@@ -58,7 +65,7 @@ const About1 = () => {
               </p>
             </Row>
           </Container>
-          <p style={{ color: "#756f54", paddingTop: "5%" }}>
+          <p style={{ color: "#F1A7B8", paddingTop: "5%" }}>
             "Driven to create impactful solutions that leave a mark on the
             world!"{" "}
           </p>

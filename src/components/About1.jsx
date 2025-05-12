@@ -49,10 +49,10 @@ const About1 = () => {
                     paddingTop: "10%",
                   }}
                 >
-                  <li className="about-activity">
+                  {/* <li className="about-activity">
                     ➡️ Playing volleyball, a sport that challenges both my
                     teamwork and agility.
-                  </li>
+                  </li> */}
                   <li className="about-activity">
                     📚 Diving into books, exploring stories and ideas that
                     broaden my horizons

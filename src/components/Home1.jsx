@@ -39,9 +39,15 @@ function Home2() {
             with powerful modern libraries such as{" "}
             <i>
               <b className="yellow">React.js</b>
-            </i>
-            . My goal is to develop impactful, user-friendly web applications
+            </i>. I also have backend development experience using{" "}
+            <i>
+              <b className="yellow">Node.js</b>
+            </i> and{" "}
+            <i>
+              <b className="yellow">Express.js</b>
+            </i>. My goal is to develop impactful, user-friendly web applications
             while continuously growing as a developer.
+
           </p>
         </Col>
       </Row>

@@ -1,5 +1,5 @@
 import { ChevronDown } from 'lucide-react';
-
+import portfolioPic from '../../dist/assets/portfolio.png';
 interface HeroProps {
   onNavigate: (section: string) => void;
 }
@@ -21,7 +21,7 @@ export default function Hero({ onNavigate }: HeroProps) {
         
         {/* LARGE WHITE SCRIBBLE BEHIND */}
         <img
-          src="../dist/assets/portfolio.png"    // ⬅ replace with your scribble image
+          src={portfolioPic}    // ⬅ replace with your scribble image
           className="w-[900px] opacity-80 select-none pointer-events-none"
           alt=""
         />
